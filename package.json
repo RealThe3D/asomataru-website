@@ -3,7 +3,9 @@
 	"version": "1.0.0",
 	"description": "Asomataru website, using React",
 	"scripts": {
-		"start": "react-scripts start"
+		"start": "react-scripts start",
+		"build": "react-scripts build",
+		"serve": "serve -s build"
 	},
 	"keywords": [],
 	"author": "",
