@@ -1,11 +1,11 @@
 {
 	"name": "asomataru-dashboard",
-	"version": "1.0.0",
+	"version": "1.1.0",
 	"description": "Asomataru website, using React",
 	"scripts": {
 		"start": "react-scripts start",
-		"build": "react-scripts build",
-		"serve": "serve -s build"
+		"predeploy": "react-scripts build",
+		"deploy": "firebase deploy"
 	},
 	"keywords": [],
 	"author": "",
@@ -14,7 +14,9 @@
 		"react": "^17.0.2",
 		"react-dom": "^17.0.2",
 		"react-router-dom": "^5.2.0",
-		"react-scripts": "^4.0.3"
+		"react-scripts": "^4.0.3",
+		"styled-components": "^5.3.0",
+		"typewriter-effect": "^2.17.0"
 	},
 	"browserslist": {
 		"production": [
