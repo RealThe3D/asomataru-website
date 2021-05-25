@@ -13,3 +13,15 @@ export const HomepageTitle = styled.h1`
 			text-align: center;
 		`}
 `;
+
+export const HomepageInfo = styled.div`
+	background: ${(props) => props.color};
+	margin: 1vh;
+	padding: 20px;
+	border-radius: 5px;
+	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+		Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+	font-weight: 500;
+	width: 75%;
+	text-align: center;
+`;

@@ -8,7 +8,7 @@ const StyledContainer = styled.div`
 	${(props) =>
 		props.text &&
 		css`
-			width: 70%;
+			width: 75%;
 		`}
 `;
 

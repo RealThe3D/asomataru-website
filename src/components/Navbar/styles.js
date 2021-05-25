@@ -4,17 +4,18 @@ import styled from 'styled-components';
 const Navbar = styled.nav`
 	font-family: 'Montserrat', sans-serif;
 	font-weight: 500;
-	list-style: none;
-	background-color: #161b22;
+
+	background: #1d1e24;
 	margin: 5px;
 	border-radius: 10px;
 	z-index: 2;
 	display: flex;
+	flex-wrap: wrap;
 
 	a {
 		padding: 8px;
 		float: left;
-		display: block;
+
 		text-decoration: none;
 		color: whitesmoke;
 		transition: background-color 300ms ease;
