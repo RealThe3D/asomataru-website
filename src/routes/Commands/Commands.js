@@ -11,7 +11,7 @@ function Commands() {
 	const [moderation, setModeration] = useState(false);
 	const [utils, setUtils] = useState(false);
 	const [rpg, setRPG] = useState(false);
-	const [noCategory, setNoCategory] = useState(false);
+	const [noCategory, setNoCategory] = useState(true);
 
 	return (
 		<>
