@@ -1,24 +1,25 @@
-import React, { Component, useState } from 'react';
+import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import { CommandContainer, CommandDescription, CommandTitle } from './styles';
 import Button from '../../components/Button/Button';
 import Container from '../../components/Container/Container';
-import { Link } from 'react-router-dom';
 import Navbar from '../../components/Navbar/Navbar';
 
 function Commands() {
-	const [general, setGeneral] = useState(false);
-	const [fun, setFun] = useState(false);
-	const [moderation, setModeration] = useState(false);
-	const [utils, setUtils] = useState(false);
-	const [rpg, setRPG] = useState(false);
-	const [noCategory, setNoCategory] = useState(true);
+	const [commands, setCommands] = useState({
+		noCategory: true,
+	});
 
 	return (
 		<>
 			<Navbar>
 				<Link to="/">Home</Link>
 				<Link to="/commands">Commands</Link>
-				<a target="_blank" href="https://top.gg/bot/730622099525206086">
+				<a
+					rel="noopener"
+					target="_blank"
+					href="https://top.gg/bot/730622099525206086"
+				>
 					Invite
 				</a>
 			</Navbar>
@@ -27,12 +28,7 @@ function Commands() {
 				<Button
 					blurple
 					onClick={() => {
-						setGeneral(true);
-						setFun(false);
-						setModeration(false);
-						setUtils(false);
-						setRPG(false);
-						setNoCategory(false);
+						setCommands({ general: true, noCategory: false });
 					}}
 				>
 					General
@@ -40,12 +36,7 @@ function Commands() {
 				<Button
 					blurple
 					onClick={() => {
-						setGeneral(false);
-						setFun(true);
-						setModeration(false);
-						setUtils(false);
-						setRPG(false);
-						setNoCategory(false);
+						setCommands({ fun: true, noCategory: false });
 					}}
 				>
 					Fun
@@ -53,12 +44,7 @@ function Commands() {
 				<Button
 					blurple
 					onClick={() => {
-						setGeneral(false);
-						setFun(false);
-						setModeration(true);
-						setUtils(false);
-						setRPG(false);
-						setNoCategory(false);
+						setCommands({ moderation: true, noCategory: false });
 					}}
 				>
 					Moderation
@@ -66,12 +52,7 @@ function Commands() {
 				<Button
 					blurple
 					onClick={() => {
-						setGeneral(false);
-						setFun(false);
-						setModeration(false);
-						setUtils(true);
-						setRPG(false);
-						setNoCategory(false);
+						setCommands({ utils: true, noCategory: false });
 					}}
 				>
 					Utils
@@ -79,18 +60,13 @@ function Commands() {
 				<Button
 					blurple
 					onClick={() => {
-						setGeneral(false);
-						setFun(false);
-						setModeration(false);
-						setUtils(false);
-						setRPG(true);
-						setNoCategory(false);
+						setCommands({ rpg: true, noCategory: false });
 					}}
 				>
 					RPG
 				</Button>
 			</Container>
-			{general ? (
+			{commands.general && (
 				<>
 					<Container>
 						<CommandContainer>
@@ -104,17 +80,14 @@ function Commands() {
 						<CommandContainer>
 							<CommandTitle>Avatar</CommandTitle>
 							<CommandDescription>
-								Gets the image or GIF (for nitro users) of a
-								Discord account!
+								Gets the image or GIF (for nitro users) of a Discord account!
 							</CommandDescription>
 						</CommandContainer>
 					</Container>
 					<Container>
 						<CommandContainer>
 							<CommandTitle>Birthday</CommandTitle>
-							<CommandDescription>
-								Shows upcoming birthdays!
-							</CommandDescription>
+							<CommandDescription>Shows upcoming birthdays!</CommandDescription>
 						</CommandContainer>
 					</Container>
 					<Container>
@@ -150,8 +123,8 @@ function Commands() {
 						</CommandContainer>
 					</Container>
 				</>
-			) : null}
-			{fun ? (
+			)}
+			{commands.fun && (
 				<>
 					<Container>
 						<CommandContainer>
@@ -180,17 +153,13 @@ function Commands() {
 					<Container>
 						<CommandContainer>
 							<CommandTitle>Joke</CommandTitle>
-							<CommandDescription>
-								Tell a joke in chat!
-							</CommandDescription>
+							<CommandDescription>Tell a joke in chat!</CommandDescription>
 						</CommandContainer>
 					</Container>
 					<Container>
 						<CommandContainer>
 							<CommandTitle>Kiss</CommandTitle>
-							<CommandDescription>
-								Kiss someone! mwuah :)
-							</CommandDescription>
+							<CommandDescription>Kiss someone! mwuah :)</CommandDescription>
 						</CommandContainer>
 					</Container>
 					<Container>
@@ -210,8 +179,8 @@ function Commands() {
 						</CommandContainer>
 					</Container>
 				</>
-			) : null}
-			{moderation ? (
+			)}
+			{commands.moderation && (
 				<>
 					<Container>
 						<CommandContainer>
@@ -230,8 +199,8 @@ function Commands() {
 						</CommandContainer>
 					</Container>
 				</>
-			) : null}
-			{utils ? (
+			)}
+			{commands.utils && (
 				<>
 					<Container>
 						<CommandContainer>
@@ -266,14 +235,14 @@ function Commands() {
 						</CommandContainer>
 					</Container>
 				</>
-			) : null}
-			{noCategory ? (
+			)}
+			{commands.noCategory && (
 				<Container>
 					<CommandContainer>
 						<CommandTitle>Please select a category!</CommandTitle>
 					</CommandContainer>
 				</Container>
-			) : null}
+			)}
 		</>
 	);
 }

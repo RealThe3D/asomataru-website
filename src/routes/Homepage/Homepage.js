@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom';
 import Typewriter from 'typewriter-effect';
 import Navbar from '../../components/Navbar/Navbar';
@@ -29,17 +29,15 @@ function Homepage() {
 				</HomepageTitle>
 			</Container>
 			<Container>
-				<HomepageTitle small>
-					A very fun discord bot to use!
-				</HomepageTitle>
+				<HomepageTitle small>A very fun discord bot to use!</HomepageTitle>
 			</Container>
 			<Container>
 				<HomepageInfo color="#4A148C">
-					Asomataru is a discord bot created back in July 2020 by a 13
-					(now 14) year old.
+					Asomataru is a discord bot created back in July 2020 by a 13 (now 14)
+					year old.
 					<br />
-					Asomataru currently as of the v2.5 update has over 30
-					commands for you to enjoy!
+					Asomataru currently as of the v2.5 update has over 30 commands for you
+					to enjoy!
 					<br />
 				</HomepageInfo>
 			</Container>
@@ -66,9 +64,7 @@ function Homepage() {
 			<Container>
 				<HomepageInfo color="#134f8a" style={{ marginBottom: '20vh' }}>
 					<p>
-						<span style={{ fontSize: '2rem' }}>
-							And so much more!
-						</span>
+						<span style={{ fontSize: '2rem' }}>And so much more!</span>
 						<br />
 						so why not add Asomataru to your discord server today!
 						<br />
