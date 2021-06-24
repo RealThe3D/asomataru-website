@@ -28,7 +28,7 @@ function Commands() {
 				<Button
 					blurple
 					onClick={() => {
-						setCommands({ general: true, noCategory: false });
+						setCommands({ general: true });
 					}}
 				>
 					General
@@ -36,7 +36,7 @@ function Commands() {
 				<Button
 					blurple
 					onClick={() => {
-						setCommands({ fun: true, noCategory: false });
+						setCommands({ fun: true });
 					}}
 				>
 					Fun
@@ -44,7 +44,7 @@ function Commands() {
 				<Button
 					blurple
 					onClick={() => {
-						setCommands({ moderation: true, noCategory: false });
+						setCommands({ moderation: true });
 					}}
 				>
 					Moderation
@@ -52,7 +52,7 @@ function Commands() {
 				<Button
 					blurple
 					onClick={() => {
-						setCommands({ utils: true, noCategory: false });
+						setCommands({ utils: true });
 					}}
 				>
 					Utils
@@ -60,7 +60,7 @@ function Commands() {
 				<Button
 					blurple
 					onClick={() => {
-						setCommands({ rpg: true, noCategory: false });
+						setCommands({ rpg: true });
 					}}
 				>
 					RPG
