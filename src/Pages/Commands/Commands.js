@@ -5,6 +5,10 @@ import Button from '../../components/Button/Button';
 import Container from '../../components/Container/Container';
 import Navbar from '../../components/Navbar/Navbar';
 
+/* 
+	const _commands = [{}];
+*/
+
 function Commands() {
 	const [commands, setCommands] = useState({
 		noCategory: true,
@@ -13,12 +17,12 @@ function Commands() {
 	return (
 		<>
 			<Navbar>
-				<Link to="/">Home</Link>
-				<Link to="/commands">Commands</Link>
+				<Link to='/'>Home</Link>
+				<Link to='/commands'>Commands</Link>
 				<a
-					rel="noopener"
-					target="_blank"
-					href="https://top.gg/bot/730622099525206086"
+					rel='noopener'
+					target='_blank'
+					href='https://top.gg/bot/730622099525206086'
 				>
 					Invite
 				</a>

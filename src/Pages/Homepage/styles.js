@@ -18,7 +18,7 @@ export const HomepageInfo = styled.div`
 	background: ${(props) => props.color};
 	margin: 1vh;
 	padding: 20px;
-	border-radius: 5px;
+	border-radius: 10px;
 	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
 		Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 	font-weight: 500;

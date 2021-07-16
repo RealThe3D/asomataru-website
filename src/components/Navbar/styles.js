@@ -4,8 +4,7 @@ import styled from 'styled-components';
 const Navbar = styled.nav`
 	font-family: 'Montserrat', sans-serif;
 	font-weight: 500;
-
-	background: #1d1e24;
+	background: rgb(30, 30, 30);
 	margin: 5px;
 	border-radius: 10px;
 	z-index: 2;
@@ -14,8 +13,6 @@ const Navbar = styled.nav`
 
 	a {
 		padding: 8px;
-		float: left;
-
 		text-decoration: none;
 		color: whitesmoke;
 		transition: background-color 300ms ease;

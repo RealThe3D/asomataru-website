@@ -1,11 +1,15 @@
-/* FONTS */
+/* Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
 
-/* GLOBALS */
+/* Globals */
 :root {
+	--old-blurple: #7289da;
+	--dark-gray: rgb(30, 30, 30);
+	--light-gray: rgb(50, 50, 50);
 	font-size: 16px;
 }
+/* Misc. */
 * {
 	margin: 0;
 	padding: 0;
@@ -15,4 +19,19 @@ body {
 	color: white;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
+	overflow-y: scroll;
+}
+
+/* Scrollbar */
+body::-webkit-scrollbar {
+	width: 10px;
+}
+
+body::-webkit-scrollbar-track {
+	background-color: var(--dark-gray);
+}
+
+body::-webkit-scrollbar-thumb {
+	background-color: var(--light-gray);
+	border-radius: 10px;
 }
