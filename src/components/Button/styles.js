@@ -8,7 +8,7 @@ const Button = styled.button`
 	font-family: 'Montserrat', sans-serif;
 	font-size: 1rem;
 	font-weight: 500;
-	border: 3px solid var(--old-blurple);
+	border: 3px solid var(--new-blurple);
 	padding: 10px;
 	width: 8em;
 	transition: background-color 300ms ease;
@@ -16,7 +16,7 @@ const Button = styled.button`
 	${(props) =>
 		props.blurple &&
 		css`
-			background-color: var(--old-blurple);
+			background-color: var(--new-blurple);
 		`}
 	&:hover {
 		background-color: #121212;
