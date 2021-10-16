@@ -61,14 +61,6 @@ function Commands() {
 				>
 					Utils
 				</Button>
-				<Button
-					blurple
-					onClick={() => {
-						setCommands({ rpg: true });
-					}}
-				>
-					RPG
-				</Button>
 			</Container>
 			{commands.general && (
 				<>
