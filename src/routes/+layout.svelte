@@ -3,4 +3,5 @@
 	import '../app.css';
 </script>
 
-<div class="flex flex-col"><Navbar /><slot /></div>
+<Navbar />
+<slot />
