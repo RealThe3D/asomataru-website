@@ -3,4 +3,4 @@
 	import '../app.css';
 </script>
 
-<div class="bg-[#121212] h-screen w-screen"><Navbar /><slot /></div>
+<div class="flex flex-col"><Navbar /><slot /></div>
