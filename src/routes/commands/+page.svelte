@@ -76,8 +76,8 @@
 	commands.subscribe((n) => (commandVal = n));
 </script>
 
-<div class="flex flex-col items-center space-y-2">
-	<div class="font-bold space-x-4">
+<div class="flex flex-col items-center justify-center space-y-2">
+	<div class="font-bold grid-cols-2 md:grid-cols-4 grid gap-2">
 		{#each categories as category, index}
 			<button
 				class="bg-blue-600 p-3 rounded-lg w-32 hover:bg-[#121212] ease-linear transition-all border-4 border-blue-600"
@@ -90,10 +90,10 @@
 	{:else}
 		{#each categories[commandVal].commands as command}
 			<div
-				class="bg-gray-800 font-bold text-lg flex justify-between py-4 px-6 items-center w-3/4 rounded-md text-white"
+				class="bg-gray-800 font-bold text-lg flex-none md:flex justify-normal md:justify-between py-4 px-6 items-center w-3/4 rounded-md text-white"
 			>
 				<h1>{command.commandName}</h1>
-				<p class="text-gray-400">{command.description}</p>
+				<p class="text-gray-400 opacity-65">{command.description}</p>
 			</div>
 		{/each}
 	{/if}
