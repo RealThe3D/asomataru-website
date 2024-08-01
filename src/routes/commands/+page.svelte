@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
 	import { writable } from 'svelte/store';
 
 	const commands = writable(-1);
@@ -71,8 +71,8 @@
 			]
 		}
 	];
-	/** @type {number} */
-	let commandVal;
+
+	let commandVal: number;
 	commands.subscribe((n) => (commandVal = n));
 </script>
 
