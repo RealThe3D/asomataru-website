@@ -72,7 +72,7 @@
 		}
 	];
 
-	let commandVal: number;
+	let commandVal: number = $state(-1);
 	commands.subscribe((n) => (commandVal = n));
 </script>
 
@@ -81,7 +81,7 @@
 		{#each categories as category, index}
 			<button
 				class="bg-blue-600 p-3 rounded-lg w-32 hover:bg-[#121212] ease-linear transition-all border-4 border-blue-600"
-				on:click={() => commands.set(index)}>{category.name}</button
+				onclick={() => commands.set(index)}>{category.name}</button
 			>
 		{/each}
 	</div>
