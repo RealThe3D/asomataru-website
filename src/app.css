@@ -1,8 +1,10 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import 'tailwindcss';
+
+html {
+	background-color: #121212;
+}
 
 * {
-	font-family: 'Montserrat', sans-serif;
 	color: white;
+	font-family: 'Montserrat', sans-serif;
 }
