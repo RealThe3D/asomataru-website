@@ -10,6 +10,6 @@ export const load: PageServerLoad = async () => {
 	});
 
 	return {
-		serverCount: data.length
+		serverCount: data.length as number
 	};
 };
