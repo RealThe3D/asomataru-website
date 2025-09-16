@@ -7,7 +7,7 @@
 	<h2 class="mb-4 text-2xl font-bold">A very fun Discord bot to use!</h2>
 	<div class="mx-auto w-1/2 rounded-lg bg-purple-700 p-6 text-center">
 		<p>Asomataru is a Discord bot created in July 2020 by a 13 (now 19) year old.</p>
-		<p>Asomataru is used in {data.serverCount} servers!</p>
+		<p>Asomataru is used in {data.serverCount || 0} servers!</p>
 	</div>
 	<div class="mt-6 flex w-1/2 flex-col rounded-lg bg-blue-700 p-6 text-center">
 		<span class="text-2xl font-bold">Some commands include:</span>
